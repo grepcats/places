@@ -2,6 +2,10 @@
   display:none;
 }
 
+h1 {
+  font-family: 'Fontdiner Swanky', cursive;
+}
+
 h3 {
   font-size: 1em;
   font-weight: bold;

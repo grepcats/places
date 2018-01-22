@@ -22,12 +22,16 @@ $(document).ready(function() {
     $("input#landmark1").val("");
     $("input#landmark2").val("");
     $("input#landmark3").val("");
+    $("input#timeOfYear").val("");
+    $("input#notes").val("");
 
     $(".click").last().click(function() {
       $(".output-group").show();
       $(".output-group h2").text(newPlace.locationText);
       $(".location-output").text(newPlace.locationText);
       $(".landmarks-output").text(newPlace.landmarkArray.join(", "));
+      $(".timeOfYear-output").text(newPlace.timeOfYearText);
+      $(".notes-output").text(newPlace.notesText);
     });
 
 
