@@ -1,0 +1,12 @@
+.output-group {
+  display:none;
+}
+
+h3 {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.landmark {
+  margin-left: 20px;
+}

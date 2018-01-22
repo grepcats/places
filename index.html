@@ -10,28 +10,55 @@
   </head>
   <body>
     <div class="container">
-      <h1>Places I've Been</h1>
-      <form id="places">
-        <div class="form-group">
-          <label for="location">Where was it?</label>
-          <input type="text" id="location" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="landmarks">Landmarks I visited.</label>
-          <input type="text" id="landmarks" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="timeOfYear">The time of year I visited.</label>
-          <input type="text" id="timeOfYear" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="notes">Additional details!</label>
-          <input type="text" id="notes" class="form-control">
-        </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>Places I've Been</h1>
+          <form id="places">
+            <div class="form-group">
+              <label for="location">Where was it?</label>
+              <input type="text" id="location" class="form-control">
+            </div>
+            <div class="form-group landmarks">
+              <h3>Landmarks I visited.</h3>
+              <div class="form-group landmark">
+                <label for="landmark1">First landmark</label>
+                <input type="text" id="landmark1" class="form-control">
+              </div>
+              <div class="form-group landmark">
+                <label for="landmark2">Second landmark</label>
+                <input type="text" id="landmark2" class="form-control">
+              </div>
+              <div class="form-group landmark">
+                <label for="landmark3">Third landmark</label>
+                <input type="text" id="landmark3" class="form-control">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="timeOfYear">The time of year I visited.</label>
+              <input type="text" id="timeOfYear" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="notes">Additional details!</label>
+              <input type="text" id="notes" class="form-control">
+            </div>
 
-        <button type="submit" class="btn btn-primary">Submit!</button>
-      </form>
-    </div>
+            <button type="submit" class="btn btn-primary">Submit!</button>
+          </form>
+
+
+          <div id="placeList">
+            <h2>List of Places</h2>
+              <ul>
+              </ul>
+          </div>
+        </div>
+        <div class="col-md-6 output-group">
+          <h2></h2>
+          <p>Location: <span class="location-output"></span></p>
+          <p>Landmarks: <span class="landmarks-output"></span></p>
+        </div>
+      </div>
+  </div>
 
   </body>
 </html>
